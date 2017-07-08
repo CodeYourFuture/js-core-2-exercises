@@ -7,7 +7,7 @@ First step is to `fork` this repo to your account, then `clone` it locally.
 After you do that, `add a remote` to point to CodeYourFuture repo, that will allow you to update you forked copy when we update the repo with more exercises.
 
 This is the command to run
-`git remote add upstream git@github.com:CodeYourFuture/js-refactoring.git`
+`git remote add upstream git@github.com:CodeYourFuture/js-core-2-exercises.git`
 
 ## How to run the tests
 To run the tests from the console, run the command: `npm test` 
