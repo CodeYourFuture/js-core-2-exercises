@@ -2,6 +2,14 @@
   Refactor this function to use .find and ES6 syntax
  */
 
+const findByName = (persons, name)=>{
+  const result = [];
+  persons.find((params)=>{
+    params.firstName === name ? result.push(params) : false;
+  })
+  return result[0];
+};
+/*
 function findByName(persons, name) {
   for(var i = 0; i < persons.length; i++) {
     if(persons[i].firstName === name) {
@@ -9,6 +17,6 @@ function findByName(persons, name) {
       return persons[i];
     }
   }
-};
+};*/
 
 module.exports = findByName;
