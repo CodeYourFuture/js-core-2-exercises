@@ -6,10 +6,16 @@
 5. If it is not case insensitive, then make it!
  */
 
-var WORD_TO_FIND = 'Lorem';
-
+const WORD_TO_FIND = 'Lorem';
+const findMessages = function (messages) {
+    let result = [];
+    messages.find((params)=>{
+        params.text.match(WORD_TO_FIND) ? result.push(params) : false;
+    })
+    return result[0];
+};
+/*
 var findMessages = function(messages) {
-    var result = [];
     for(var i = 0; i < messages.length; i++){
         var message = messages[i];
         if(message.text.match(WORD_TO_FIND)){
@@ -17,5 +23,5 @@ var findMessages = function(messages) {
         }
     }
 };
-
+*/
 module.exports = findMessages;
