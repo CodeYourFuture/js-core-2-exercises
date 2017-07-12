@@ -4,7 +4,7 @@
 */
 
 const doubleAll = (numbers)=>{
-  let result = []
+  const result = []
   numbers.map((params => result.push(params * 2)));
   return result
 }

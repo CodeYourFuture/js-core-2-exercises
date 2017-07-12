@@ -4,7 +4,7 @@
 const vowels = ["a", "e", "i", "o", "u"];
 
 const getUpperCaseVowels = (letters)=>{
-    let result = [];
+    const result = [];
     letters.map((params)=>{
         (vowels.indexOf(params) !== -1) ? result.push(params.toUpperCase()) : false;
     });

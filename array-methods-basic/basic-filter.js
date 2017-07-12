@@ -6,7 +6,7 @@
 
 const MESSAGE_LENGTH = 30;
 const getShortMessages = (messages)=>{
-    let result = [];
+    const result = [];
     messages.filter((params)=>{
         params.text.length < MESSAGE_LENGTH ? result.push(params) : false;
     });
