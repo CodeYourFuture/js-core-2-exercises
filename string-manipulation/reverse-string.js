@@ -5,6 +5,7 @@
 
 function reverseString(originalString) {
     // Code! - Hint: use the array functions you've learned to achieve this
+    return originalString.split('').reverse().join('');
 }
 
 module.exports = reverseString;
