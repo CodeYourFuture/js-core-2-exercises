@@ -5,12 +5,10 @@
  */
 
 const checkAllFemale = (persons) => {
-  persons.every(function(params) {
-    if (params.gender !== 'female') {
-      return false;
-    }
+  const result = persons.every((params)=>{
+    return params.gender !== 'female' ? false : true;
   })
-  return true;
+  return result;
 };
 /*
 function checkAllFemale(persons) {
