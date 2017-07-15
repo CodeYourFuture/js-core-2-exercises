@@ -3,11 +3,10 @@
  */
 
 const findByName = (persons, name)=>{
-  const result = [];
-  persons.find((params)=>{
-    params.firstName === name ? result.push(params) : false;
+   const result = persons.find((params)=>{
+      return params.firstName === name ? params : false;
   })
-  return result[0];
+  return result;
 };
 /*
 function findByName(persons, name) {
