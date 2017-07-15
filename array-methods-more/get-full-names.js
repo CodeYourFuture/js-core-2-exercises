@@ -3,9 +3,8 @@
  */
 
 const getFullNames = (persons)=>{
-  const result = [];
-  persons.map((params)=>{
-    result.push({ fullName: `${params.firstName} ${params.lastName}` });
+   const result = persons.map((params)=>{
+    return {fullName: `${params.firstName} ${params.lastName}`};
   })
   return result;
 };
