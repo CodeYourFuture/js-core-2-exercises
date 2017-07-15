@@ -2,9 +2,8 @@
   Refactor this function to use .find and ES6 syntax
  */
 const findByGender = (persons, gender)=>{
-  const result = [];
-  persons.find((params) => {
-    params.gender === gender ? result.push(params) : false;
+   const result = persons.find((params) => {
+    return params.gender === gender ? result.push(params) : false;
   });
   return result;
 };
