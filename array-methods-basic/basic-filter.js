@@ -6,9 +6,8 @@
 
 const MESSAGE_LENGTH = 30;
 const getShortMessages = (messages)=>{
-    const result = [];
-    messages.filter((params)=>{
-        params.text.length < MESSAGE_LENGTH ? result.push(params) : false;
+    const result = messages.filter((params)=>{
+        return params.text.length < MESSAGE_LENGTH ? params : false;
     });
     return result;
 };
