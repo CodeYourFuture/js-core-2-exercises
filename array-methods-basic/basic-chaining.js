@@ -4,22 +4,13 @@
 const vowels = ["a", "e", "i", "o", "u"];
 
 const getUpperCaseVowels = (letters)=>{
-    const result = [];
-    letters.map((params)=>{
-        (vowels.indexOf(params) !== -1) ? result.push(params.toUpperCase()) : false;
+    const result = letters.filter((letter)=>{
+       return vowels.includes(letter) ?  letter : false;
+    }).map((letter)=>{
+        return letter.toUpperCase();
     });
     return result;
 };
-/*
-const getUpperCaseVowels = (letters)=>{
-    let result = [];
-    letters.filter(function (params) {
-        if (vowels.indexOf(params) !== -1) {
-            result.push(params.toUpperCase());
-        }
-    });
-    return result;
-};*/
 /*
 function getUpperCaseVowels(letters) {
     const result = [];
