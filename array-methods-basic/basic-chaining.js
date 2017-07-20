@@ -4,14 +4,14 @@
 var vowels = ["a", "e", "i", "o", "u"];
 
 function getUpperCaseVowels(letters) {
-    const upperVowel = letters.filter(function (vowel) {
+    const getVowel = letters.filter(function (vowel) {
         return (vowels.indexOf(vowel) != -1)
 
     })
         .map((vowel) => {
             return vowel.toUpperCase();
         })
-    return upperVowel;
+    return getVowel;
 };
 module.exports = getUpperCaseVowels;
 
