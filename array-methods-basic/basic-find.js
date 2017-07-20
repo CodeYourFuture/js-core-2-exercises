@@ -7,17 +7,26 @@
 5. If it is not case insensitive, then make it!
  */
 
+// var WORD_TO_FIND = 'Lorem';
+
+// var findMessages = function(messages) {
+// var result = [];
+//     for(var i = 0; i < messages.length; i++){
+//         var message = messages[i];
+//         if(message.text.match(WORD_TO_FIND)){
+//             return message
+//         }
+//     }
+// };
+
+// module.exports = findMessages;
 var WORD_TO_FIND = 'Lorem';
 
-var findMessages = function(messages) {
-var result = [];
-    for(var i = 0; i < messages.length; i++){
-        var message = messages[i];
-        if(message.text.match(WORD_TO_FIND)){
-            return message
-        }
-    }
+var findMessages = function (messages) {
+    var result = messages.find(function (message) {
+        return message.text.match(WORD_TO_FIND)
+    })
+    return result;
 };
 
 module.exports = findMessages;
-    
