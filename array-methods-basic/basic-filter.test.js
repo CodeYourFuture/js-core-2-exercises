@@ -21,7 +21,7 @@ describe('getShortMessages', function () {
             text: 'Efficitur quam blandit'
         }];
     // Act
-    const result = getShortMessages(messages);
+    const result = getShortMessages(messages, 10);
 
     // Assert
     expect(result).toEqual([{

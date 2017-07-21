@@ -4,14 +4,23 @@
     2. Add more tests to check this is working
  */
 
+// function checkAllFemale(persons) {
+//   for(var i = 0; i < persons.length; i++) {
+//     if(persons[i].gender !== 'female') {
+//         // notice how we exit early if one of the persons is not female
+//         return false;
+//     }
+//   }
+//   return true;
+// };
+
+// module.exports = checkAllFemale;
+
 function checkAllFemale(persons) {
-  for(var i = 0; i < persons.length; i++) {
-    if(persons[i].gender !== 'female') {
-        // notice how we exit early if one of the persons is not female
-        return false;
-    }
-  }
-  return true;
+  var result = persons.every(function(person){
+    return person.gender == "female"
+  })
+  return result;
 };
 
 module.exports = checkAllFemale;
