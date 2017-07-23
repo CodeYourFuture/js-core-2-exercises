@@ -4,7 +4,7 @@
 
 const findByName = (persons, name)=>{
    const result = persons.find((params)=>{
-      return params.firstName === name ? params : false;
+      return params.firstName === name;
   })
   return result;
 };

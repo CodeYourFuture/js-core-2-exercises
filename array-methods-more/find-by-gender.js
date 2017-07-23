@@ -3,7 +3,7 @@
  */
 const findByGender = (persons, gender)=>{
    const result = persons.find((params) => {
-    return params.gender === gender ? params : false;
+    return params.gender === gender;
   });
   return result;
 };

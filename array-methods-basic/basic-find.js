@@ -8,7 +8,7 @@
 const WORD_TO_FIND = 'Lorem';
 const findMessages = function (messages) {
 const result = messages.find((params)=>{
-        return params.text.match(WORD_TO_FIND) ? params : false;
+        return params.text.match(WORD_TO_FIND);
     })
     return result;
 };

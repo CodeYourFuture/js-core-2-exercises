@@ -1,6 +1,6 @@
 const shiftLetters = require('./shift-letters');
 
-describe.skip('shiftLetters', function() {
+describe('shiftLetters', function() {
   test('changes hello to ifmmp', () => {
     // Arrange
     const word = 'hello';

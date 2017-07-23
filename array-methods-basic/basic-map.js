@@ -5,7 +5,7 @@
 
 const doubleAll = (numbers)=>{
    const result = numbers.map((params => params * 2));
-  return result
+   return result;
 }
 /*
 function doubleAll(numbers) {
