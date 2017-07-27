@@ -14,3 +14,9 @@ describe('getUpperCaseVowels', function() {
 
     });
 });
+    
+//     test('the function returns an array of positions where a needle is found', function() {
+//     var haystack = ['needle', 'hay', 'rabbit', 'needle', 'hat'];
+//     var position = findMultipleNeedles(haystack);
+//     expect(position).toEqual([0, 3]);
+// });

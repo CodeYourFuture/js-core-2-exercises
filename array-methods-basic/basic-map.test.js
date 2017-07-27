@@ -7,3 +7,12 @@ describe('doubleNumber', function() {
         expect(result).toEqual([2, 6, 8]);
     });
 })
+
+describe('doubleNumber', function() {
+    test('doubles every number in the array', function() {
+        var numbers = (1, 3, 4);
+        var result = doubleNumber(numbers);
+        expect(result).toEqual(2, 6, 8);
+    });
+})
+//expect(result).toEqual(2, 6, 8);
