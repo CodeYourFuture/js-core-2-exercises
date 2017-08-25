@@ -6,7 +6,7 @@
 5. If it is not case insensitive, then make it!
  */
 
-var WORD_TO_FIND = 'Lorem';
+var WORD_TO_FIND = 'Lorem';'word';
 
 var findMessages = function(messages) {
     var result = [];
