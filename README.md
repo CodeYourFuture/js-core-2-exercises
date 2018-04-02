@@ -10,6 +10,7 @@ This is the command to run
 `git remote add upstream git@github.com:CodeYourFuture/js-core-2-exercises.git`
 
 ## How to run the tests
+Before to run the tests, you need to run this command: `npm install` 
 To run the tests from the console, run the command: `npm test` 
 To keep the tests running (auto updating when you save files), run the command: `npm test -- --watch` then press `a` to run all the tests and keep watching the files for changes. To quit the tests, type `q`.
 
