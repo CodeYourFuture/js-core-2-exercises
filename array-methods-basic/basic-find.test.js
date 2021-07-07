@@ -27,3 +27,4 @@ describe('findWordInMessages', function () {
     expect(result).toEqual({"text": "Lorem ipsum dolor sit amet"});
   });
 });
+

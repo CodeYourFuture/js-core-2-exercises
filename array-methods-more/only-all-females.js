@@ -4,6 +4,13 @@
     2. Add more tests to check this is working
  */
 
+const checkAllFemale = (persons) => {
+  const result = persons.every((params)=>{
+    return params.gender !== 'female' ? false : true;
+  })
+  return result;
+};
+/*
 function checkAllFemale(persons) {
   for(var i = 0; i < persons.length; i++) {
     if(persons[i].gender !== 'female') {
@@ -12,6 +19,6 @@ function checkAllFemale(persons) {
     }
   }
   return true;
-};
+};*/
 
 module.exports = checkAllFemale;

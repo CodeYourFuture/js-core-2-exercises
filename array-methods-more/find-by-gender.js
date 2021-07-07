@@ -1,7 +1,13 @@
 /*
   Refactor this function to use .find and ES6 syntax
  */
-
+const findByGender = (persons, gender)=>{
+   const result = persons.find((params) => {
+    return params.gender === gender;
+  });
+  return result;
+};
+/*
 function findByGender(persons, gender) {
   var result = [];
   for(var i = 0; i < persons.length; i++) {
@@ -10,6 +16,6 @@ function findByGender(persons, gender) {
     }
   }
   return result;
-};
+};*/
 
 module.exports = findByGender;

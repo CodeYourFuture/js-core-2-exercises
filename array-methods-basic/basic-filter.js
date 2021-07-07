@@ -4,8 +4,14 @@
 3. Write tests to cover the case where length is provided
  */
 
-var MESSAGE_LENGTH = 30;
-
+const MESSAGE_LENGTH = 30;
+const getShortMessages = (messages)=>{
+    const result = messages.filter((params)=>{
+        return params.text.length < MESSAGE_LENGTH;
+    });
+    return result;
+};
+/*
 var getShortMessages = function(messages) {
     var result = [];
     for(var i = 0; i < messages.length; i++){
@@ -15,6 +21,6 @@ var getShortMessages = function(messages) {
         }
     }
     return result;
-};
+};*/
 
 module.exports = getShortMessages;

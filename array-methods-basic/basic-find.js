@@ -5,11 +5,15 @@
 4. Write a test to check if your function is case insensitive
 5. If it is not case insensitive, then make it!
  */
-
-var WORD_TO_FIND = 'Lorem';
-
+const WORD_TO_FIND = 'Lorem';
+const findMessages = function (messages) {
+const result = messages.find((params)=>{
+        return params.text.match(WORD_TO_FIND);
+    })
+    return result;
+};
+/*
 var findMessages = function(messages) {
-    var result = [];
     for(var i = 0; i < messages.length; i++){
         var message = messages[i];
         if(message.text.match(WORD_TO_FIND)){
@@ -17,5 +21,5 @@ var findMessages = function(messages) {
         }
     }
 };
-
+*/
 module.exports = findMessages;

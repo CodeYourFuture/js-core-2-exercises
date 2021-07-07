@@ -2,6 +2,13 @@
   Refactor this function to use .map and ES6 syntax
  */
 
+const getFullNames = (persons)=>{
+   const result = persons.map((params)=>{
+    return {fullName: `${params.firstName} ${params.lastName}`};
+  })
+  return result;
+};
+/*
 function getFullNames(persons) {
   const result  = [];
   for (var i = 0; i < persons.length; i++) {
@@ -10,6 +17,6 @@ function getFullNames(persons) {
     result.push({ fullName: fullName });
   }
   return result;
-};
+};*/
 
 module.exports = getFullNames;
